@@ -27,7 +27,11 @@ public class Pizza {
     }
 
     public int getPrice(){
-        return this.price;
+
+        if(isVeg)
+            return 300;
+        else
+            return 400;
     }
 
     public void addExtraCheese(){
